@@ -16,3 +16,5 @@ To install the application, follow these steps:
 ## Usage
 
 To use the application, run the following command:
+
+<!-- was easier to read this way -->
