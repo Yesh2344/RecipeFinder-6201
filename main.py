@@ -40,6 +40,7 @@ def update_recipe(id):
     db.session.commit()
     return jsonify(recipe.to_dict())
 
+# minor polish
 @app.route('/recipes/<int:id>', methods=['DELETE'])
 def delete_recipe(id):
     recipe = Recipe.query.get(id)
