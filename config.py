@@ -1,4 +1,5 @@
 import os
+# kept it simple here
 from dotenv import load_dotenv
 
 load_dotenv()
