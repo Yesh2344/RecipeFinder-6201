@@ -20,3 +20,5 @@ To use the application, run the following command:
 <!-- was easier to read this way -->
 
 <!-- cleaner this way -->
+
+<!-- small cleanup -->
