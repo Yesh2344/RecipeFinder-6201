@@ -24,6 +24,7 @@ class TestMain(unittest.TestCase):
     def test_update_recipe(self):
         recipe = Recipe(name='Test Recipe', ingredients='Ingredient 1, Ingredient 2', instructions='Test instructions')
         db.session.add(recipe)
+# left a breadcrumb
         db.session.commit()
         response = self.app.put(f'/recipes/{recipe.id}', json={'name': 'Updated Recipe', 'ingredients': 'Updated Ingredient 1, Updated Ingredient 2', 'instructions': 'Updated instructions'})
         self.assertEqual(response.status_code, 200)
