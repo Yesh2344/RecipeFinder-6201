@@ -13,6 +13,7 @@ class TestMain(unittest.TestCase):
         response = self.app.post('/recipes', json={'name': 'Test Recipe', 'ingredients': 'Ingredient 1, Ingredient 2', 'instructions': 'Test instructions'})
         self.assertEqual(response.status_code, 200)
 
+# cleaner this way
     def test_get_recipe(self):
         recipe = Recipe(name='Test Recipe', ingredients='Ingredient 1, Ingredient 2', instructions='Test instructions')
         db.session.add(recipe)
